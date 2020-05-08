@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ShenoyWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Capstone.css">
+  <script src="Capstone.js"></script>
+</head>
+<body onload="startTime()">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="Capstone1.html">Shenoy Web</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#first"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="#images" ><span class="glyphicon glyphicon-picture"></span> Gallery</a></li>
+        <li><a href="#about"><span class="glyphicon glyphicon-user"></span> About</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" style="width: 400px;">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#slpanel"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#slpanel"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clock">
+  <div class="On-clock" id="txt"></div>
+  </div>
+  <section class="First" id="first">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Shenoy Web</h1>
+        <p>This is my first website. I hope everyone will like this website.</p>
+      </div>
+    </div>
+  </section>
+  <section class="Newsletter">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Subscribe our Newsletter</h4>
+      <p class="card-text">Do subscribe!</p>
+      <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+          <label class="control-label col-sm-2">Email:</label>
+          <div class="col-sm-5">
+            <input type="email" class="form-control" id="Email" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2">Name:</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="Username" placeholder="Enter Your Name">
+          </div>
+        </div>
+      </form>
+      <label><input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter</label><br>
+      <input type="submit" value="Subscribe" style="width: 150px; font-weight: bold; color: #000;">
+    </div>
+  </div>
+  </section>
+  <hr class="solid">
+  <section class="Images" id="images">
+    <h3>Gallery</h3>
+    <img src="../Capstone/Images/1.jpg" class="img-thumbnail" alt="photo1">
+    <p>I clicked this photo</p>
+    <img src="../Capstone/Images/2.jpg" class="img-thumbnail" alt="photo1">
+    <p>I spend most of my free time here!</p>
+    <img src="../Capstone/Images/4.jpg" class="img-thumbnail" alt="photo1">
+    <p>This is a downloaded Image</p>
+  </section>
+  <hr class="solid">
+  <section class="Panel" id="slpanel">
+    <div class="panel panel-primary">
+     <div class="panel-heading">Sign Up</div>
+      <div class="panel-body">
+        <h4>If you don't have an account, Sign-Up here</h4>
+        <form class="form-horizontal" action="/action_page.php">
+          <div class="form-group">
+            <label class="control-label col-sm-2">Email:</label>
+            <div class="col-sm-5">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2">Name:</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Your Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label ><input type="checkbox"> Use the same for Log In</label>
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+     </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">Log In</div>
+    <div class="panel-body">
+      <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+          <label class="control-label col-sm-2">Email:</label>
+          <div class="col-sm-5">
+            <input type="email" class="form-control" id="emailId" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2">Name:</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="your-name" placeholder="Enter Your Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <hr class="solid">
+  <section class="Contact">
+    <h3>Contact Details</h3>
+    <div class="well well-lg"><p>You can contact me at ddssdd@gmail.com</p></div>
+  </section>
+  <hr class="solid">
+  <section class="Second" id="about">
+    <h3>About Me</h3>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Myself</a></li>
+      <li><a data-toggle="tab" href="#menu1">Place</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <p>Hi Everyone <br> I'm Dheemanth Shenoy D<br>I'm an Electronics and communication engineering Student. I'm currently my Third year studies and My final year starts in August 2020.<br>I want to become an responsible Web designer to serve the society.</P>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <p>I currently Live at Kasaragod, Kerala, India </p>
+      </div>
+    </div>
+  </section>
+  <hr class="solid">
+  <section class="Comment"> 
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </section>
+  <section class="Footer" id="footer">
+    <footer>
+      <p> &copy; 2020 | This page was created by Dheemanth Shenoy.</p>
+    </footer>
+  </section>
+</body>
+</html>
